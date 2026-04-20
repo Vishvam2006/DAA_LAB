@@ -39,5 +39,10 @@ int main()
         {2, 3, 1, 3},
         {2, 1, 2, 2}};
 
-    assemblyLineScheduling(5, 2, 4, stationTime, transferTime, 3, 6);
+    int entry1 = 2;
+    int entry2 = 4;
+
+    assemblyLineScheduling(5, entry1, entry2, stationTime, transferTime, 3, 6);
+
+    return 0;
 }
