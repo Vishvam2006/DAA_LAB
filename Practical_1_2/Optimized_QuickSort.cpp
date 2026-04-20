@@ -43,7 +43,7 @@ void quickSort(int arr[], int low, int high)
         }
     }
 }
-
+ 
 int main()
 {
     int arr[6] = {6, 3, 7, 5, 2, 4};
