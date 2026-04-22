@@ -1,14 +1,12 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-
 struct City
 {
     string name;
     int x;
     int y;
 };
-
 struct Node
 {
     City data;

@@ -10,6 +10,7 @@ int minVal(int a, int b)
 void assemblyLineScheduling(int n, int entry1, int entry2, vector<vector<int>> stationTime, vector<vector<int>> transferTime, int exit1, int exit2)
 {
     vector<int> line1(n), line2(n);
+    vector<int> path1(n), path2(n);
 
     line1[0] = entry1 + stationTime[0][0];
     line2[0] = entry2 + stationTime[1][0];

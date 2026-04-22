@@ -4,8 +4,7 @@ using namespace std;
 
 int maxValue = 0;
 
-void knapsack(int i, int n, int W, vector<int>& wt, vector<int>& val,
-              int currWeight, int currValue) {
+void knapsack(int i, int n, int W, vector<int>& wt, vector<int>& val, int currWeight, int currValue) {
     
     if (i == n) {
         if (currValue > maxValue)
@@ -14,13 +13,10 @@ void knapsack(int i, int n, int W, vector<int>& wt, vector<int>& val,
     }
 
     if (currWeight + wt[i] <= W) {
-        knapsack(i + 1, n, W, wt, val,
-                 currWeight + wt[i],
-                 currValue + val[i]);
+        knapsack(i + 1, n, W, wt, val, currWeight + wt[i], currValue + val[i]);
     }
 
-    knapsack(i + 1, n, W, wt, val,
-             currWeight, currValue);
+    knapsack(i + 1, n, W, wt, val, currWeight, currValue);
 }
 
 int main() {
